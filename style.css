@@ -1,0 +1,224 @@
+.main{ 
+    padding: 96px 0px 96px 0px;
+    gap: 48px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+    background-color: white;
+}
+.headingText{
+    text-align: center;
+    font-family: DotGothic16;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.mainImage{
+    margin-top:50px
+}
+.tiles{
+    
+    /* height: 1000px; */
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    /* border:2px solid black; */
+    grid-gap:30px;
+
+    /* justify-content: center; */
+}
+.grid{
+    /* border:2px solid  blue; */
+    /* height: 200px; */
+    /* width:250px; */
+    /* padding: 48px 0px 48px 0px; */
+    /* gap: 48px; */
+    /* opacity: 0px; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    height:350px;
+
+}
+.t{
+    height:350px;
+    /* border:2px solid blue; */
+}
+.tImage{
+    width: 100%;
+    height: 277px;
+    gap: 0px;
+    /* border: 1px 0px 0px 0px; */
+    opacity: 0px;
+
+}
+.captions{
+    width: 416px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+}
+.c1{
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+                    
+}
+.c2{
+    font-family: Archivo;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;             
+}
+
+.contactContainer{
+    
+    padding: 96px 0px 96px 0px;
+    gap: 35px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.textConnected{
+    font-family: DotGothic16;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.email{
+    width: 464px;
+    height: 48px;
+    padding: 8px 12px 8px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.submit{
+    width: 124px;
+    height: 48px;
+    /* margin-top:10px; */
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: rgba(36, 25, 243, 1);
+    color:white
+}
+
+/* ----> */
+
+/* styles.css */
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.newsletter-footer {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 0;
+  }
+  
+  .newsletter-title {
+    color: #000;
+    letter-spacing: -0.34px;
+    text-align: center;
+    font: 400 34px/1 DotGothic16, sans-serif;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-top: 48px;
+    width: 600px;
+    max-width: 100%;
+    gap: 12px;
+    font-size: 20px;
+    line-height: 1.2;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter-input {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 8px;
+    background: #fff;
+    min-width: 240px;
+    gap: 8px;
+    font: 400 20px/1.2 Archivo, sans-serif;
+    color: #000;
+    height: 100%;
+    flex-basis: 24px;
+    padding: 8px 12px;
+    border: 1px solid #000;
+  }
+  
+  .newsletter-submit {
+    align-self: start;
+    border-radius: 8px;
+    background: rgba(36, 25, 243, 1);
+    font: 500 20px/1.2 "Archivo Narrow", sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+  }
