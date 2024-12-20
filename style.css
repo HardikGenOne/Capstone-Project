@@ -222,3 +222,212 @@ footer {
     border: none;
     cursor: pointer;
   }
+  
+            .visually-hidden {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              border: 0;
+            }
+            
+            .newsletter-footer {
+              background: #fff;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 96px 0;
+            }
+            
+            .newsletter-title {
+              color: #000;
+              letter-spacing: -0.34px;
+              text-align: center;
+              font: 400 34px/1 DotGothic16, sans-serif;
+            }
+            
+            .newsletter-form {
+              display: flex;
+              margin-top: 48px;
+              width: 600px;
+              max-width: 100%;
+              gap: 12px;
+              font-size: 20px;
+              line-height: 1.2;
+              justify-content: start;
+              flex-wrap: wrap;
+            }
+            
+            .newsletter-input {
+              align-self: stretch;
+              flex: 1;
+              border-radius: 8px;
+              background: #fff;
+              min-width: 240px;
+              gap: 8px;
+              font: 400 20px/1.2 Archivo, sans-serif;
+              color: #000;
+              height: 100%;
+              flex-basis: 24px;
+              padding: 8px 12px;
+              border: 1px solid #000;
+            }
+            
+            .newsletter-submit {
+              align-self: start;
+              border-radius: 8px;
+              background: rgba(36, 25, 243, 1);
+              font: 500 20px/1.2 "Archivo Narrow", sans-serif;
+              color: #fff;
+              white-space: nowrap;
+              padding: 12px 24px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .social-links {
+              display: flex;
+              margin-top: 48px;
+              align-items: center;
+              gap: 32px;
+            }
+            
+            .social-icon {
+              aspect-ratio: 1;
+              object-fit: contain;
+              object-position: center;
+              width: 48px;
+            }
+            
+            @media (max-width: 991px) {
+              .newsletter-form {
+                margin-top: 40px;
+              }
+              
+              .newsletter-input {
+                max-width: 100%;
+              }
+              
+              .newsletter-submit {
+                white-space: initial;
+                padding: 12px 20px;
+              }
+              
+              .social-links {
+                margin-top: 40px;
+              }
+            }
+
+            
+          
+          
+            .footer {
+                background-color: rgba(255, 255, 255, 1);
+                width: 100%;
+                padding: 40px 20px;
+                position: relative;
+                bottom: 0;
+              }
+              
+              .footer-wrapper {
+                max-width: 1200px;
+                margin: 0 ;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                padding: 0 20px;
+              }
+              
+              .copyright-text {
+                font: 400 28px/1 DotGothic16, sans-serif;
+                letter-spacing: -0.28px;
+                margin: 0;
+              }
+              
+              .contact-button {
+                font: 500 20px/1.2 "Archivo Narrow", -apple-system, Roboto, Helvetica, sans-serif;
+                background: none;
+                border: 1px solid rgba(0, 0, 0, 1);
+                border-radius: 8px;
+                padding: 12px 24px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              }
+              
+              .contact-button:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+              }
+              
+              @media (max-width: 768px) {
+                .footer {
+                  padding: 30px 15px;
+                }
+              
+                .footer-wrapper {
+                  grid-template-columns: 1fr;
+                  gap: 15px;
+                  text-align: center;
+                  padding: 0 15px;
+                }
+              
+                .copyright-text {
+                  font-size: 24px;
+                }
+              
+                .contact-button {
+                  justify-self: center;
+                  width: 100%;
+                  color: #000;
+                  max-width: 300px;
+                }
+              }
+              
+              /* Mobile breakpoint */
+              @media (max-width: 370px) {
+                .footer {
+                  padding: 25px 10px;
+                }
+              
+                .footer-wrapper {
+                  padding: 0 10px;
+                  gap: 12px;
+                }
+              
+                .copyright-text {
+                  font-size: 20px;
+                }
+              
+                .contact-button {
+                  font-size: 18px;
+                  padding: 10px 20px;
+                  max-width: 250px;
+                }
+              }
+              
+              /* Small mobile breakpoint */
+              @media (max-width: 320px) {
+                .footer {
+                  padding: 20px 8px;
+                }
+              
+                .footer-wrapper {
+                  padding: 0 8px;
+                  gap: 10px;
+                }
+              
+                .copyright-text {
+                  font-size: 18px;
+                }
+              
+                .contact-button {
+                  font-size: 16px;
+                  padding: 8px 16px;
+                  max-width: 220px;
+                }
+              }
