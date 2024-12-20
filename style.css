@@ -810,7 +810,7 @@ footer {
   .headingText {
     background: linear-gradient(90deg, #000, var(--primary-color));
     background-size: 200% 100%;
-    -webkit-background-clip: text;
+   
     background-clip: text;
     animation: gradientShift 8s linear infinite;
   }
@@ -873,12 +873,7 @@ footer {
     transform: translateY(-2px);
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation: none !important;
-      transition: none !important;
-    }
-  }
+
 
   @media (max-width: 768px) {
     .newsletter-form {
