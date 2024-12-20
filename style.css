@@ -750,3 +750,148 @@ footer {
                   max-width: 220px;
                 }
               }
+              /* Additional Breakpoint for Large Screens */
+@media (max-width: 1024px) {
+    .main {
+      padding: 72px 15px;
+      max-width: 960px;
+    }
+  
+    .headingText {
+      font-size: 96px;
+    }
+  
+    .grid {
+      gap: 15px;
+    }
+  
+    .navbar {
+      margin: 0 4rem;
+    }
+  }
+  
+  /* Additional Breakpoint for Medium Screens */
+  @media (max-width: 425px) {
+    .main {
+      padding: 48px 12px;
+    }
+  
+    .headingText {
+      font-size: 56px;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
+  
+    .tImage {
+      height: 240px;
+    }
+  
+    .navbar {
+      margin: 0 1.5rem;
+    }
+  
+    .newsletter-form {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Enhanced Animation Effects */
+  .t {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .t:hover {
+    transform: translateY(-8px) scale(1.02);
+  }
+  
+  .headingText {
+    background: linear-gradient(90deg, #000, var(--primary-color));
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientShift 8s linear infinite;
+  }
+  
+  .mainImage {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .mainImage:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Smooth Loading Animations */
+  .t {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .grid:nth-child(1) .t { animation-delay: 0.2s; }
+  .grid:nth-child(2) .t { animation-delay: 0.4s; }
+  .grid:nth-child(3) .t { animation-delay: 0.6s; }
+  
+  /* New Keyframe Animations */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Enhanced Hover Effects */
+  .newsletter-submit {
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(36, 25, 243, 0.3);
+  }
+  
+  .contact-button {
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Accessibility Improvements */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
+  /* Fix for newsletter form on smaller screens */
+  @media (max-width: 768px) {
+    .newsletter-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .newsletter-input,
+    .newsletter-submit {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
