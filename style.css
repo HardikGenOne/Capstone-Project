@@ -43,7 +43,7 @@
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -206,7 +206,7 @@
     color: #666;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
     .tiles {
         grid-gap: 20px;
@@ -231,7 +231,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 370px) {
     .tiles {
         grid-gap: 15px;
@@ -258,7 +258,7 @@
     }
 }
 
-/* Small Mobile */
+
 @media (max-width: 320px) {
     .tiles {
         grid-gap: 10px;
@@ -284,7 +284,7 @@
     }
 }
 
-/* Contact Section */
+
 .contactContainer {
     max-width: 1400px;
     margin: 0 auto;
@@ -707,7 +707,7 @@ footer {
                 }
               }
               
-              /* Mobile breakpoint */
+             
               @media (max-width: 370px) {
                 .footer {
                   padding: 25px 10px;
@@ -729,7 +729,7 @@ footer {
                 }
               }
               
-              /* Small mobile breakpoint */
+      
               @media (max-width: 320px) {
                 .footer {
                   padding: 20px 8px;
@@ -750,7 +750,7 @@ footer {
                   max-width: 220px;
                 }
               }
-              /* Additional Breakpoint for Large Screens */
+           
 @media (max-width: 1024px) {
     .main {
       padding: 72px 15px;
@@ -770,7 +770,7 @@ footer {
     }
   }
   
-  /* Additional Breakpoint for Medium Screens */
+  
   @media (max-width: 425px) {
     .main {
       padding: 48px 12px;
@@ -798,8 +798,7 @@ footer {
       padding: 0 20px;
     }
   }
-  
-  /* Enhanced Animation Effects */
+ 
   .t {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -826,7 +825,7 @@ footer {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
   }
   
-  /* Smooth Loading Animations */
+
   .t {
     opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
@@ -836,7 +835,7 @@ footer {
   .grid:nth-child(2) .t { animation-delay: 0.4s; }
   .grid:nth-child(3) .t { animation-delay: 0.6s; }
   
-  /* New Keyframe Animations */
+
   @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -854,7 +853,7 @@ footer {
     }
   }
   
-  /* Enhanced Hover Effects */
+
   .newsletter-submit {
     transition: all 0.3s ease;
   }
@@ -873,16 +872,14 @@ footer {
     color: white;
     transform: translateY(-2px);
   }
-  
-  /* Accessibility Improvements */
+
   @media (prefers-reduced-motion: reduce) {
     * {
       animation: none !important;
       transition: none !important;
     }
   }
-  
-  /* Fix for newsletter form on smaller screens */
+
   @media (max-width: 768px) {
     .newsletter-form {
       flex-direction: column;
